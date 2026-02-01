@@ -6,14 +6,18 @@
   "configurations": [
     {
       "name": "Launch Mergington WebApp",
-      "type": "debugpy",
+      "type": "python",
       "request": "launch",
       "module": "uvicorn",
       "args": [
         "src.app:app",
-        "--reload"
+        "--reload",
+        "--port",
+        "8000"
       ],
-      "jinja": true
+      "jinja": true,
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
